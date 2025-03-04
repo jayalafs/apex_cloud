@@ -1,0 +1,16 @@
+<properties>
+    <!-- Nombre del host (extraído de la imagen) -->
+    <entry key="db.hostname">adb.sa-saopaulo-1.oraclecloud.com</entry>
+
+    <!-- Puerto estándar para conexiones a Oracle ADB con SSL -->
+    <entry key="db.port">1522</entry>
+
+    <!-- Seleccionar el nivel de servicio según rendimiento (high, medium, low, tp, tpurgent) -->
+    <entry key="db.servicename">gc013d54ec04a07_apex_high.adb.oraclecloud.com</entry>
+
+    <!-- Ruta al Wallet de Oracle Cloud -->
+    <entry key="db.wallet.zip">/opt/oracle/wallet/Wallet_ATP.zip</entry>
+
+    <!-- Configuración SSL para autenticación mutua -->
+    <entry key="db.ssl_server_dn_match">yes</entry>
+</properties>

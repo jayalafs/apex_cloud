@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  apex-ords:
+    build: .
+    container_name: apex-ords
+    ports:
+      - "8282:8282"  # Mapeo del puerto 8282
+    volumes:
+      - ./ords_config:/opt/oracle/ords/config  # Configuración ORDS
+      - ./wallet:/opt/oracle/wallet            # Wallet Oracle Cloud
+    environment:
+      ORACLE_WALLET_DIR: "/opt/oracle/wallet"
+    restart: unless-stopped
