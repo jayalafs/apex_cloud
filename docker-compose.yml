@@ -5,7 +5,7 @@ services:
     build: .
     container_name: apex-ords
     ports:
-      - "8282:8282"  # Mapeo del puerto 8282
+      - "8383:8383"  # Mapeo del puerto 8383
     volumes:
       - ./ords_config:/opt/oracle/ords/config  # Configuración ORDS
       - ./wallet:/opt/oracle/wallet            # Wallet Oracle Cloud
