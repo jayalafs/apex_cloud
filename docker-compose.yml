@@ -2,13 +2,19 @@ version: '3.8'
 
 services:
   apex-ords:
-    build: .
+    image: apex_cloud-apex-ords
     container_name: apex-ords
+    restart: always
     ports:
-      - "8383:8383"  # Mapeo del puerto 8383
+      - "8383:8080"
     volumes:
-      - ./ords_config:/opt/oracle/ords/config  # Configuración ORDS
-      - ./wallet:/opt/oracle/wallet            # Wallet Oracle Cloud
+      - ./ords_config:/opt/oracle/ords/config
+      - ./wallet:/opt/oracle/wallet
     environment:
-      ORACLE_WALLET_DIR: "/opt/oracle/wallet"
-    restart: unless-stopped
+      - TZ=America/Asuncion
+    networks:
+      - default
+
+networks:
+  default:
+    driver: bridge
