@@ -1,4 +1,4 @@
-FROM docker.io/library/tomcat:9.0.82-jdk11
+FROM tomcat:9.0.82-jdk17-corretto
 
 # Definir directorios de trabajo
 WORKDIR /opt/oracle/
