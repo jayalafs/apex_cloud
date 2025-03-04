@@ -1,8 +1,6 @@
-version: '3.8'
-
 services:
   apex-ords:
-    image: apex_cloud-apex-ords
+    build: .
     container_name: apex-ords
     restart: always
     ports:

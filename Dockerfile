@@ -17,14 +17,14 @@ COPY ords_config/ /opt/oracle/ords/config/
 COPY wallet/ /opt/oracle/wallet/
 
 # Descargar y extraer ORDS
-RUN curl -o ords.zip https://download.oracle.com/otn_software/apex/ords-latest.zip && \
-    unzip ords.zip -d /opt/oracle/ords/ && \
-    rm ords.zip
+RUN curl -o ords-latest.zip https://download.oracle.com/otn_software/java/ords/ords-latest.zip && \
+    unzip ords-latest.zip -d /opt/oracle/ords/ && \
+    rm ords-latest.zip
 
 # Descargar y extraer APEX
-RUN curl -o apex.zip https://download.oracle.com/otn_software/apex/apex-latest.zip && \
-    unzip apex.zip -d /opt/oracle/apex/ && \
-    rm apex.zip
+RUN curl -o apex-latest.zip https://download.oracle.com/otn_software/apex/apex-latest.zip && \
+    unzip apex-latest.zip -d /opt/oracle/apex/ && \
+    rm apex-latest.zip
 
 # Modificar configuración de Tomcat para usar el puerto 8080
 RUN sed -i 's/port="8080"/port="8080"/g' /usr/local/tomcat/conf/server.xml
