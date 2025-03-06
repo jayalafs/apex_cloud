@@ -1,12 +1,12 @@
-apex_high = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.sa-saopaulo-1.oraclecloud.com))(connect_data=(service_name=gc013d54ec04a07_apex_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+test_high = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.sa-saopaulo-1.oraclecloud.com))(connect_data=(service_name=gc013d54ec04a07_test_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
 
-apex_low = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.sa-saopaulo-1.oraclecloud.com))(connect_data=(service_name=gc013d54ec04a07_apex_low.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+test_low = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.sa-saopaulo-1.oraclecloud.com))(connect_data=(service_name=gc013d54ec04a07_test_low.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
 
-apex_medium = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.sa-saopaulo-1.oraclecloud.com))(connect_data=(service_name=gc013d54ec04a07_apex_medium.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+test_medium = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.sa-saopaulo-1.oraclecloud.com))(connect_data=(service_name=gc013d54ec04a07_test_medium.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
 
-apex_tp = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.sa-saopaulo-1.oraclecloud.com))(connect_data=(service_name=gc013d54ec04a07_apex_tp.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+test_tp = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.sa-saopaulo-1.oraclecloud.com))(connect_data=(service_name=gc013d54ec04a07_test_tp.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
 
-apex_tpurgent = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.sa-saopaulo-1.oraclecloud.com))(connect_data=(service_name=gc013d54ec04a07_apex_tpurgent.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+test_tpurgent = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.sa-saopaulo-1.oraclecloud.com))(connect_data=(service_name=gc013d54ec04a07_test_tpurgent.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
 
 
 
