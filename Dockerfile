@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y unzip curl nano netcat iputils-ping tzd
     rm -rf /var/lib/apt/lists/*
 
 # Crear estructura de directorios
-RUN mkdir -p /opt/oracle/ords/config /opt/oracle/wallet /opt/oracle/apex
+RUN mkdir -p /opt/oracle/ords/config /opt/oracle/wallet /opt/oracle/apex /opt/oracle/sqlplus
 
 # Copiar configuración de ORDS y Wallet
 COPY ords_config/ /opt/oracle/ords/config/
@@ -25,6 +25,9 @@ RUN curl -o ords-latest.zip https://download.oracle.com/otn_software/java/ords/o
 RUN curl -o apex-latest.zip https://download.oracle.com/otn_software/apex/apex-latest.zip && \
     unzip apex-latest.zip -d /opt/oracle/apex/ && \
     rm apex-latest.zip
+
+# Instalacion de SqlPlus
+
 
 # Modificar configuración de Tomcat para usar el puerto 8080
 RUN sed -i 's/port="8080"/port="8080"/g' /usr/local/tomcat/conf/server.xml
